@@ -18,7 +18,6 @@ export default class App extends React.Component {
     const { goodAnswers } = this.state
     const tempTab = [...goodAnswers]
     tempTab[keyItem] = letter
-    console.log(tempTab)
     this.setState({ goodAnswers: tempTab }, () => {
       const { goodAnswers } = this.state
       setTimeout(() => {
